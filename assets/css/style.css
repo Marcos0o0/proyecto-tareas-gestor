@@ -22,6 +22,14 @@
 --espacio-lg: 2rem; 
 }
 
+body {
+    font-family: var(--fuente-principal);
+    background-color: #EBF1FF;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
     width: 150px;
     height: 50px;
@@ -58,15 +66,18 @@
     padding: var(--espacio-md);
 }
 
+.titulo {
+    margin-top: -6px;
+    font-size: 1.5rem;
+}
+
 .formulario {
     background-color: #ffffff;
     padding: var(--espacio-md);
-    border-radius: 8px;
+    border-radius: 10px;
     border: #dadada solid 1px;
     gap: var(--espacio-sm);
 }
-
-
 
 .contador {
     color: #525a6b;
@@ -81,7 +92,7 @@ textarea {
     min-width: 22rem;
     overflow-y: hidden;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: var(--tamano-base);
     resize: none;
     field-sizing: content;
@@ -92,12 +103,12 @@ textarea {
     background-color: var(--color-primario);
     color: white;
     border: none;
-    padding: 0.5rem 2rem;
-    border-radius: 12px;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
     cursor: pointer;
     font-size: var(--tamano-base);
-    max-height: 3rem;
-    margin-top: var(--espacio-md);
+    max-height: 4rem;
+    margin-top: var(--espacio-sm);
 }
 
 .tarea-btn:hover {
@@ -107,7 +118,7 @@ textarea {
 .selector {
     padding: 0.4rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: var(--tamano-base);
     background-color: whitesmoke;
     min-width: 11rem;
@@ -171,8 +182,7 @@ li {
 
 .kanban {
     display: flex;
-    gap: var(--espacio-lg);
-    padding: var(--espacio-lg);
+    gap: 5rem;
     margin-top: var(--espacio-md);
 }
 
