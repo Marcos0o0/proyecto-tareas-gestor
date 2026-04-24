@@ -1,0 +1,84 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .form-container {
+        flex-wrap: wrap;
+    }
+
+    .kanban {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: var(--espacio-sm);
+        box-sizing: border-box;
+    }
+
+    .formulario {
+        box-sizing: border-box;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    .selector {
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tarea-btn {
+        width: 100%;
+    }
+
+    .navbar ul {
+        gap: var(--espacio-sm);
+    }
+
+    .kanban {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .navbar ul {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 100px;
+        height: 40px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn-mover,
+    .btn-eliminar {
+        width: 100%;
+        text-align: center;
+    }
+}
